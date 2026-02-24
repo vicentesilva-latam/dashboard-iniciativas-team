@@ -1,0 +1,5 @@
+{
+  "name": "LATAM HR Portfolio Dashboard",
+  "description": "Executive visualization of HR initiatives, tracking status, journey stages, and delivery timelines based on Jira data.",
+  "requestFramePermissions": []
+}
