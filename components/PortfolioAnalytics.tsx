@@ -46,8 +46,8 @@ export function PortfolioAnalytics({ data }: AnalyticsProps) {
               <p className="text-[11px] text-slate-500 font-medium">Distribución por fase actual</p>
             </div>
           </div>
-          <div className="h-[240px] w-full">
-            <ResponsiveContainer width="100%" height="100%">
+          <div className="h-[240px] w-full min-w-0">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <BarChart data={statusData} margin={{ top: 10, right: 10, left: -20, bottom: 20 }}>
                 <CartesianGrid strokeDasharray="2 2" vertical={false} stroke="#f1f5f9" />
                 <XAxis 
@@ -90,8 +90,8 @@ export function PortfolioAnalytics({ data }: AnalyticsProps) {
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="h-[240px] w-[240px] shrink-0">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-[240px] w-[240px] shrink-0 min-w-0">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                 <PieChart>
                   <Pie
                     data={journeyData}
